@@ -21,6 +21,24 @@ figure {
   position: relative;
 }
 
+figure .item-1 { 
+  background: #fff;
+  border-bottom: 10px solid #fff;
+  border-radius: 4px;
+  box-shadow: 2px 2px 15px #696969;
+  padding: 10px;
+  
+  /* layout */
+  float: left;
+  height: 300px;
+  margin: 40px;
+  width: 400px;
+  
+  /* set relative parent for each time*/
+  position: relative;
+}
+
+
 h1 {
   font-family: 'Poiret One', cursive;
   color: #407CC9;
@@ -165,17 +183,27 @@ NAVIGATION
 *************************/
 nav {
   text-align:center;
-  padding:0px 10px;
-  margin:10px 0 0;
+ background: teal;
   width: 100%;
   font-size: .75em;
-
+  position: fixed;
+  top: -30px;
+  width: 100%;
+  
+  transition: top .25s ease-in-out;
+  
 }
+
+/* last frame */
+nav:hover {
+  top: 0px;
+}
+
+
 
 nav ul {
   list-style: none;
-  margin: 5px 10px;
-  padding: 0;
+  
 }
 
 nav li {
@@ -268,10 +296,18 @@ a:active {
 
 
 
+.Me li {
+    display: inline;
+    float: left;
+    padding: 5px 5px;
+}
 
 
-
-
+.Me a {
+    display: block;
+    padding: 10px;
+    margin-right: 5px;
+}
 
 
 
