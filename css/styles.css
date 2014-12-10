@@ -88,7 +88,7 @@ ul {
 }
 
 
-figure.grid_9 {
+section.grid_9 {
   width: 100%;
   height: 100%;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -185,19 +185,16 @@ section.grid_9 {
 NAVIGATION
 *************************/
 nav {
+  font-family: 'Open Sans Condensed', sans-serif;
   text-align:center;
-  padding:0px 10px;
+  padding: 2px 10px;
   margin:10px 0 0;
   width: 100%;
-  font-size: .75em;
+  font-size: 1.25em;
 
 }
 
-nav ul {
-  list-style: none;
-  margin: 5px 10px;
-  padding: 0;
-}
+
 
 nav li {
   display: inline-block;
@@ -284,10 +281,30 @@ a:active {
   
 }
 
+/*About Page Content*/
+
+p.aboutme {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #181818;
+  margin: 20px 10px;
+  padding: 40px 10px;
+}
 
 
+.social-icon {
+  margin: 5px 5px;
+  padding: 5px 5px;
+  float: left;
+}
 
 
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  padding-top:50px;
+  color: #90C0C0;
+}
 
 /*Resume Styling*/
 
@@ -298,7 +315,7 @@ a:active {
 
 .resume li {
   font-family: 'Open Sans Condensed', sans-serif;
-  color: #9794D2;
+  color: #181818;
   text-align: left;
   padding: 5px;
 }
@@ -329,17 +346,22 @@ a:active {
 @media screen and (max-width: 768px) {
   
   body {
+    background: yellow;
     margin: auto;
     display: inline-block;
   }
 
-section.grid_7 {
+figure.grid_7 {
     margin: auto;
-    width: 100%;
-    height: 100%;
+   width: 66%;
+}
 
- 
-  }
+
+
+footer.grid_12 {
+  width: 100%;
+}
+ }
 
 
 
@@ -347,16 +369,25 @@ section.grid_7 {
 @media screen and (max-width: 480px) {
   
   body {
-   margin: auto;
+    background: blue;
+    margin: auto;
+    position: relative;
   }
 
-  section.grid_9 {
+  section.grid_7 {
     margin: auto;
     width: 100%;
   }
 
 .control-button {
   width: 100%;
+}
+
+h2.thumbnail {
+  width: 66%;
+
+}
+
 }
 
 
