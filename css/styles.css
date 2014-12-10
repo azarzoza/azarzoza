@@ -21,7 +21,7 @@ figure {
   position: relative;
 }
 
-figure .item-1 { 
+figure.fishing { 
   background: #fff;
   border-bottom: 10px solid #fff;
   border-radius: 4px;
@@ -30,7 +30,7 @@ figure .item-1 {
   
   /* layout */
   float: left;
-  height: 300px;
+  height: 400px;
   margin: 40px;
   width: 400px;
   
@@ -42,22 +42,12 @@ figure .item-1 {
 h1 {
   font-family: 'Poiret One', cursive;
   color: #407CC9;
-  padding: 5px 5px;
+  padding: 10px 10px;
   text-align: center;
+  font-size: .75em;
 }
 
 
-h1 {
-
-  transform: perspective(4200px) rotateY(45deg) scale(1);
-  transition: transform .5s;
-}
-
-h1:hover {
-  transform: rotateY(0deg);  
-  transition: transform .5s;
-  cursor: crosshair;
-}
 
 
 h2 {
@@ -66,12 +56,6 @@ h2 {
   text-align: center;
   font-size: .75em;
   padding: 10px 10px;
-}
-
-h2:hover {
-  -webkit-animation: bounce 1s infinite;
-  -o-animation: bounce 1s infinite;
-  animation: bounce 1s infinite;
 }
 
 
@@ -183,20 +167,20 @@ NAVIGATION
 *************************/
 nav {
   text-align:center;
- background: teal;
+  background: teal;
   width: 100%;
   font-size: .75em;
   position: fixed;
-  top: -30px;
-  width: 100%;
+  top: -20px;
+ 
   
-  transition: top .25s ease-in-out;
+  transition: top .5s ease-in-out;
   
 }
 
 /* last frame */
 nav:hover {
-  top: 0px;
+  top: 20px;
 }
 
 
@@ -309,7 +293,12 @@ a:active {
     margin-right: 5px;
 }
 
-
+.resume ul>li {
+    display: inline;
+    float: left;
+    padding: 5px 5px;
+    list-style: none;
+}
 
 
 
