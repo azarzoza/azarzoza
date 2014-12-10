@@ -346,7 +346,7 @@ footer {
 @media screen and (max-width: 768px) {
   
   body {
-    background: yellow;
+  
     margin: auto;
     display: inline-block;
   }
@@ -369,7 +369,7 @@ footer.grid_12 {
 @media screen and (max-width: 480px) {
   
   body {
-    background: blue;
+    
     margin: auto;
     position: relative;
   }
