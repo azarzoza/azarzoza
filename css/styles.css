@@ -21,6 +21,7 @@ figure {
   position: relative;
 }
 
+/* Layout of first page image*/
 figure.fishing { 
   background: #fff;
   border-bottom: 10px solid #fff;
@@ -30,7 +31,7 @@ figure.fishing {
   
   /* layout */
   float: left;
-  height: 400px;
+  height: 350px;
   margin: 40px;
   width: 400px;
   
@@ -38,16 +39,25 @@ figure.fishing {
   position: relative;
 }
 
-
 h1 {
   font-family: 'Poiret One', cursive;
   color: #407CC9;
-  padding: 10px 10px;
+  padding: 5px 5px;
   text-align: center;
-  font-size: .75em;
 }
 
 
+h1 {
+
+  transform: perspective(4200px) rotateY(45deg) scale(1);
+  transition: transform .5s;
+}
+
+h1:hover {
+  transform: rotateY(0deg);  
+  transition: transform .5s;
+  cursor: crosshair;
+}
 
 
 h2 {
@@ -58,6 +68,12 @@ h2 {
   padding: 10px 10px;
 }
 
+h2:hover {
+  -webkit-animation: bounce 1s infinite;
+  -o-animation: bounce 1s infinite;
+  animation: bounce 1s infinite;
+}
+
 
 h3 {
   font-family: 'Open Sans Condensed', sans-serif;
@@ -65,6 +81,10 @@ h3 {
   text-align: center;
   padding: 5px;
 
+}
+
+ul {
+  list-style: none;
 }
 
 
@@ -108,8 +128,6 @@ figure h5 {
 figure h2 {
   position: relative;
 }
-
-
 
 /* Caption Container */
 .thumbnail {
@@ -162,36 +180,28 @@ section.grid_9 {
   z-index: 2;
 }
 
+
 /************************
 NAVIGATION
 *************************/
 nav {
   text-align:center;
-  background: teal;
+  padding:0px 10px;
+  margin:10px 0 0;
   width: 100%;
   font-size: .75em;
-  position: fixed;
-  top: -20px;
- 
-  
-  transition: top .5s ease-in-out;
-  
+
 }
-
-/* last frame */
-nav:hover {
-  top: 20px;
-}
-
-
 
 nav ul {
   list-style: none;
-  
+  margin: 5px 10px;
+  padding: 0;
 }
 
 nav li {
   display: inline-block;
+  list-style: none;
 }
 
 
@@ -246,7 +256,7 @@ a:active {
   display: inherit;
 }
 .gallery .item {
-  height: 400px;
+  height: 550px;
   overflow: hidden;
   text-align: center;
   background: #4d87e2;
@@ -279,26 +289,30 @@ a:active {
 
 
 
+/*Resume Styling*/
 
-.Me li {
-    display: inline;
-    float: left;
-    padding: 5px 5px;
+.resume {
+  line-height: 30px;
+  margin: auto;
+}
+
+.resume li {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #9794D2;
+  text-align: left;
+  padding: 5px;
+}
+
+.resume h1 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #9794D2;
+  text-align: left;
+  padding: 5px;
 }
 
 
-.Me a {
-    display: block;
-    padding: 10px;
-    margin-right: 5px;
-}
 
-.resume ul>li {
-    display: inline;
-    float: left;
-    padding: 5px 5px;
-    list-style: none;
-}
+
 
 
 
